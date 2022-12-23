@@ -1,0 +1,49 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.section-features{
+    padding: 20rem 0; //200px
+    background-image: linear-gradient(to bottom right, rgba(#720BED,0.7), rgba(#BC03CB, 0.7)), url(../../assets/images/background.jpg);    
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    transform: skewY(-7deg);
+ 
+    & > *{
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+}
+
+
+.feature-box{
+    background-color: rgba(white , .8);
+    font-size: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+    transition: all .2s;
+
+    @include respond(tab-port){
+        padding: 2rem;
+    }
+
+    &__icon {
+        margin-bottom: .5rem;
+        width: 60px;
+        height: 60px;
+
+
+        @include respond(tab-port){
+            margin-bottom: 0;
+        }  
+    }
+
+    &:hover {
+        transform: scale(1.03) translateY(-1.5rem);
+    }
+}

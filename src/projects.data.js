@@ -50,11 +50,11 @@ const menu = [
       desc: `Calls the github api to display information like repos, followers, following, name, etc...,
       coded as a part of learning with coding addict and i used the same API to display my repos down ⬇`,
       technologies: ['React', 'Context API', 'Github API', 'Hooks'],
-      url: '',
+      url: 'https://react-github-api-ag.netlify.app/',
     },
     {
       id: 7,
-      title: 'bacon overflow',
+      title: 'Old Portfolio',
       category: 'HTML/CSS/JS',
       price: 8.99,
       img: './images/item-7.jpeg',

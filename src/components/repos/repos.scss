@@ -1,0 +1,76 @@
+@import '../../sass/variables';
+
+
+  .repos{
+    color: $color-grey-dark;
+
+   .icon-github{
+       fill: purple;
+       width: 50px;
+       height: 50px;
+     }
+
+     .repos-head{
+        text-decoration: underline;
+        text-decoration-color: purple;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 0.8rem;    
+     }
+     &--list{
+      background-image: url(../../assets/images/istockphoto-2.jpeg);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+     }
+ }
+  
+
+.btn-pagination{
+    padding: 0.35rem 0.75rem;
+    letter-spacing: 1.6px;
+    font-size: 0.75rem;
+    color: var(--clr-white);
+   // background: var(--clr-primary-5);
+  //  background-color: rgba(114, 11, 237, 0.7);
+    background-color: rgba(188, 3, 203, 1);
+    border-radius: var(--radius);
+    border-color: transparent;
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .page-btn {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(188, 3, 203, 0.5);
+    color: gray;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: var(--transition);
+  }
+  .active-btn {
+    background-color: rgba(188, 3, 203, 1);
+    color: var(--clr-white);
+  }
+  .prev-btn,
+  .next-btn {
+    background: transparent;
+    border-color: transparent;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+
+ 
