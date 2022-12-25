@@ -1,3 +1,7 @@
+@import '../../sass/variables';
+@import '../../sass/grid.scss';
+@import '../../sass/mixins.scss';
+
 .composition {
     position: relative;
 
@@ -15,7 +19,7 @@
             float: left;
             position: relative;
             width: 33.33333%;
-            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+            box-shadow: 0 1.5rem 3rem rgba(black, .2);
         }
 
         &--p1 {
@@ -49,7 +53,7 @@
         }
 
         &:hover {
-            outline: 1.5rem solid $color-primary;
+            outline: 0.5rem solid #999;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
@@ -60,4 +64,15 @@
         transform: scale(.95);
     }
     //composition:hover composition__photo:not(:hover) {
+}
+
+
+.about{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+
+    @include respond(tab-port){
+        padding: 20rem 0;
+    }
 }

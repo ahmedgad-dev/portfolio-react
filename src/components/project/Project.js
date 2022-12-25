@@ -12,7 +12,7 @@ const Project = ({projectItem}) => {
          </header>
          <p className='item-text'>{desc}</p>
          {technologies && technologies.map(tech => (
-            <div key={id + tech} className="badge badge-secondary badge-outline m-1">{tech}</div>
+            <div key={id + tech} className="badge badge-secondary badge-outline m-1"><span className='text-gray-700 '>{tech}</span></div>
          ))}
        </div>
      </article>

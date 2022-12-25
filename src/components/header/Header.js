@@ -26,7 +26,7 @@ function Header() {
   return (
   <Fragment>
     <Navbar />
-    <div className="header container h-full lg:h-screen lg:w-screen p-6 relative flex justify-between from-primary to-secondary text-primary-content -mt-[4rem] grid 
+    <div className="header h-full lg:h-screen lg:w-screen p-6 relative flex justify-between from-primary to-secondary text-primary-content -mt-[4rem] grid 
        place-items-center items-end bg-gradient-to-br pt-20 bg-contain"> 
       <div className="details flex flex-col w-1/2 w-1/2 h-full  align-center"> 
          <div className="site-logo flex self-start mb-6">
