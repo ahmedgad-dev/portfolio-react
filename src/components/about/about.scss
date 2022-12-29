@@ -88,5 +88,9 @@
         font-size: 32px;
         margin: 1rem;
         fill: rgb(188, 3, 203);
+
+        @media(max-width: 500px){
+            margin: 0.4rem;
+        }
     }
 }

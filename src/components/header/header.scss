@@ -197,5 +197,17 @@
         }
       }
    }
+
+   @media(max-width:450px ){
+      .details{
+        .info{
+          min-width: 300px;
+          width: 350px;
+          .progress-bar{
+            width: 200px
+          }
+        }
+      }
+   }
  }
 

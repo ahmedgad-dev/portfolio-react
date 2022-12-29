@@ -39,31 +39,31 @@ function Header() {
 
          <div className="info h-auto flex rounded-lg shadow-md w- sm:w-2/3">
           <div className="flex flex-row justify-center align-center">
-            <progress className="progress progress-secondary w-72 sm:w-96 h-4 m-2" value="80" max="100"/> <span className='leading-2 mt-1'>JavaScript</span>
+            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="80" max="100"/> <span className='leading-2 mt-1'>JavaScript</span>
           </div>
           
           <div className="flex flex-row justify-center align-center">
-            <progress className="progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>React JS</span>
+            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>React JS</span>
           </div>
 
           <div className="flex flex-row justify-center align-center">
-            <progress className="progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>CSS/SASS</span>
+            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>CSS/SASS</span>
           </div>
 
           <div className="flex flex-row justify-center align-center">
-            <progress className="progress progress-secondary w-72 sm:w-96 h-4 m-2" value="93" max="100"/> <span className='leading-2 mt-1'>HTML/JSX</span>
+            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="93" max="100"/> <span className='leading-2 mt-1'>HTML/JSX</span>
           </div>
 
           <div className="flex flex-row justify-center align-center">
-            <progress className="progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>Tailwind</span>
+            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>Tailwind</span>
           </div>
 
           <div className="flex flex-row justify-center align-center">
-            <progress className="progress progress-secondary w-72 sm:w-96 h-4 m-2" value="65" max="100"/> <span className='leading-2 mt-1'>Redux</span>
+            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="65" max="100"/> <span className='leading-2 mt-1'>Redux</span>
           </div>
 
           <div className="flex flex-row justify-center align-center">
-            <progress className="progress progress-secondary w-72 sm:w-96 h-4 m-2" value="30" max="100"/> <span className='leading-2 mt-1'>Node JS</span>
+            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="30" max="100"/> <span className='leading-2 mt-1'>Node JS</span>
           </div>
          </div>
 

@@ -10,7 +10,7 @@ import {RiWhatsappFill} from 'react-icons/ri'
 const About = () => {
   return (
     <section className="section-about mt-12">
-      <div className="mb-24">
+      <div className="mb-4 md:mb-16 lg:mb-24">
           <h2 className="heading-secondary uppercase">
               all types of projects    
           </h2>

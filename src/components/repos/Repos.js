@@ -13,7 +13,7 @@ const Repos = ({githubPage}) =>{
 
     useEffect(() => {       
       return setRepos(data[page])
-   },[page, data])
+    },[page, data])
 
     const handlePage = (index) => {
       setPage(index)
@@ -38,7 +38,7 @@ const Repos = ({githubPage}) =>{
       }
       return prevPage
     })
-    }
+  }
 
   return(
     <section className='repos flex flex-col justify-around align-center flex-wrap mt-36'>
@@ -46,12 +46,12 @@ const Repos = ({githubPage}) =>{
          GitHub  <GithubIcon className='ml-2 icon-github'/>        
      </h1>
      
-      <p className='git-info text-black text-2xl capitalize ml-12 mt-6 p-8 w-1/2'>
+      <p className='git-info text-black text-base lg:text-2xl capitalize ml-12 mt-6 p-8 w-2/3 lg:w-1/2'>
         {`here is a list of all ${ githubUser && githubUser.login}'s repos coming from 
          my github account using the github API to fetch the repos ${githubPage? '(in case you missed them at home page 😉)': ''}`} 
          ⤵  
       </p>
-      <div className='repos--list flex justify-around align-center flex-wrap bg-gray-700 p-8'>
+      <div className='repos--list flex justify-around align-center flex-wrap bg-gray-700 p-3 sm:p-8'>
         {repos && repos.map((repo => {
           const {id} = repo
           return <Repo repo={repo} key={id} />
@@ -79,7 +79,6 @@ const Repos = ({githubPage}) =>{
             </button>
           </div>
         )}
-
     </section>
   )
 }
