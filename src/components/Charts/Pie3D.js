@@ -41,6 +41,7 @@ const ChartComponent = ({data}) => {
         //Set the theme for your chart
         theme: "fusion",
         decimals: 0,
+        paletteColors: '#BC03CB', 
       },
       // Chart Data
       data

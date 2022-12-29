@@ -1,11 +1,11 @@
 import React from 'react'
 import './about.scss'
-import { ReactComponent as Facebook } from '../../assets/svg/facebook.svg'
-import { ReactComponent as Telegram } from '../../assets/svg/telegram.svg'
 import image2 from '../../assets/images/istock-3.jpeg'
 import image1 from '../../assets/images/unsplash-1.jpg'
 import image3 from '../../assets/images/unsplash-2.jpg'
-
+import {GrTwitter,GrInstagram} from 'react-icons/gr'
+import {FaTiktok, FaFacebookF, FaTelegramPlane} from 'react-icons/fa'
+import {RiWhatsappFill} from 'react-icons/ri'
 
 const About = () => {
   return (
@@ -29,9 +29,13 @@ const About = () => {
                   and functionality and supporting libraries.
                </p>
                <h3 className="heading-tertiary u-margin-bottom-small">feel free to contact me on social media</h3>
-               <div className="flex flex-row justify-center align-center">
-                  <Telegram/>
-                  <Facebook/>
+               <div className="social flex flex-row  self-center">
+                  <RiWhatsappFill className='icon' title='WhatsApp'/>
+                  <FaFacebookF className='icon' title='Facebook'/>
+                  <GrInstagram className='icon' title='Instagram'/>
+                  <FaTiktok className='icon' title='TikTok'/>
+                  <GrTwitter className='icon' title='Twitter' />
+                  <FaTelegramPlane className='icon' title='Telegram'/>
                </div>
    
             </div>

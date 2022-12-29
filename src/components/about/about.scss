@@ -76,3 +76,17 @@
         padding: 20rem 0;
     }
 }
+
+.social{
+    border-bottom: 3px solid #999;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    
+    .icon{
+        font-size: 32px;
+        margin: 1rem;
+        fill: rgb(188, 3, 203);
+    }
+}

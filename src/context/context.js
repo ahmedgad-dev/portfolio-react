@@ -9,6 +9,7 @@ const GithubProvider = ({children}) => {
     const[data, setData] = useState([])
     const[isLoading, setIsLoading] = useState(false)
     const[error, setError] = useState({show: false, message: ''})
+    const[repos, setRepos] = useState([])
 
    
    
@@ -23,7 +24,8 @@ const GithubProvider = ({children}) => {
             const {login} = data
             const repos = await fetch(`${rootUrl}/users/${login}/repos?per_page=100`)
             const reposData = await repos.json()
-            setData(paginate(reposData))                       
+            setData(paginate(reposData))   
+            setRepos(reposData)                    
           }else{
             toggleError(true, 'No user found matching this user name')
           }      
@@ -48,7 +50,8 @@ const GithubProvider = ({children}) => {
             data,   
             error,
             isLoading,      
-            githubUser
+            githubUser,
+            repos
         }}>
             {children}
         </GithubContext.Provider>

@@ -38,6 +38,7 @@ const ChartComponent = ({data}) => {
         decimals: 0,
         showPercentValues: 0,
         theme: 'candy',
+        paletteColors: '#BC03CB', 
       },
       // Chart Data
       data

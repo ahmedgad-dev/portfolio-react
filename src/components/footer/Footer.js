@@ -5,8 +5,6 @@ import {FaTiktok, FaFacebookF} from 'react-icons/fa'
 import {BsTelephone, BsEnvelope} from 'react-icons/bs'
 import {GoLocation} from 'react-icons/go'
 import styled from 'styled-components'
-
-
 import { Link } from 'react-router-dom'
 
 const date = new Date()
@@ -80,7 +78,7 @@ const Footer = () => {
 const Wrapper = styled.section`
   background-color: #999;
   padding: 2rem 2rem;
-  margin-top: 15rem;
+  margin-top: 7rem;
   h3 {
     text-transform: none;
   }
