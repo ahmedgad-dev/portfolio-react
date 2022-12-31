@@ -28,7 +28,7 @@ const menu = [
     },
     {
       id: 4,
-      title: 'country delight',
+      title: 'Trillo',
       category: 'HTML/CSS/JS',
       price: 20.99,
       img: './images/item-4.jpeg',
@@ -36,7 +36,7 @@ const menu = [
     },
     {
       id: 5,
-      title: 'egg attack',
+      title: 'React Project',
       category: 'React',
       price: 22.99,
       img: './images/item-5.jpeg',
