@@ -10,7 +10,7 @@
    }
 
   
-   .site-logo{
+ /*  .site-logo{
     color: white;
     font-size: 32px;
     position: relative;
@@ -19,10 +19,10 @@
     font-weight: bold;
     line-height: 50px;
 
-    &__1{
+    &__2{
       display: none;
     }
-   }
+   }*/
 
 
    .details{
@@ -53,7 +53,7 @@
       min-width: 521px;
       position: absolute;
       right:-258px;
-      top: 340px;
+      top: 352px;
       margin: 0 0 auto;
 
       .brand-icon{
@@ -114,9 +114,9 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .site-logo__1{
+ /*   .site-logo__1{
       display: block;
-    }
+    }*/
 
     .card-container{
       order: 1;
@@ -128,9 +128,10 @@
        margin-top: 2rem;
        justify-content: center;
        width: auto;
-       .site-logo__2{
+
+     /*  .site-logo__2{
          display: none;
-       }
+       }*/
     }
 
     .card{
@@ -172,8 +173,8 @@
         margin-top: 20px;
         .card{
           flex-direction: column; 
-          width: 340px;   
-          min-width: 300px;
+          width: 420px;   
+          min-width: 400px;
     
           .card-body{
             width: 80%;
@@ -191,11 +192,21 @@
            width: 300px;
           .brands-col{
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: space-around;
+            align-content: space-around;
+            gap: 12px;
           }      
         }
       }
+
+      .card-container{
+        .card{
+          flex-direction: column; 
+          width: 350px;   
+          min-width: 300px;
+         }
+      }  
    }
 
    @media(max-width:450px ){
@@ -203,11 +214,43 @@
         .info{
           min-width: 300px;
           width: 350px;
+          font-size: 20px;
           .progress-bar{
             width: 200px
           }
         }
       }
+
+      .card-container{
+        .card{
+          flex-direction: column; 
+          width: 320px;   
+          min-width: 300px;
+          font-size: 14px;
+         }
+      } 
    }
+
+   @media(max-width:400px ){
+    .details{
+      .info{
+        min-width: 300px;
+        width: 330px;
+        font-size: 16px;
+        .progress-bar{
+          width: 200px
+        }
+      }
+    }
+
+    .card-container{
+      .card{
+        flex-direction: column; 
+        width: 320px;   
+        min-width: 300px;
+        font-size: 14px;
+       }
+    } 
+ }
  }
 

@@ -20,6 +20,7 @@ import { ReactComponent as TailwindIcon } from '../../assets/svg/tailwindcss.svg
 import { ReactComponent as WordpressIcon } from '../../assets/svg/wordpress.svg'
 import { ReactComponent as VisualstudioIcon } from '../../assets/svg/visualstudiocode.svg'
 import { ReactComponent as BootstrapIcon } from '../../assets/svg/bootstrap.svg'
+import Logo from '../logo/Logo'
 
 function Header() {
   return (
@@ -28,13 +29,9 @@ function Header() {
     <div className="header h-full xl:h-screen lg:w-screen p-6 relative flex justify-between from-primary to-secondary text-primary-content -mt-[4rem] grid 
        place-items-center items-end bg-gradient-to-br pt-20 bg-contain"> 
 
-    { /* <div className="site-logo site-logo__1 flex">
-        Ahmed Gad Dev
-      </div>*/}
-
       <div className="details flex flex-col w-1/2 h-full align-center"> 
-         <div className="site-logo site-logo__2 flex self-start mb-6">
-            Ahmed Gad Dev
+         <div className="site-logo site-logo__2 flex self-start mb-2">
+            <Logo/>
          </div>
 
          <div className="info h-auto flex rounded-lg shadow-md w- sm:w-2/3">

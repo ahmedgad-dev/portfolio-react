@@ -1,0 +1,28 @@
+.logo{
+    background-image: url('../../assets/images/logo/Studio-Project-transparent-3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-header{
+    width: 250px;
+    height: 70px;
+    display: block;
+
+    @media(max-width: 1024px){
+        display: none;
+    }
+  
+}
+
+.logo-nav{
+    width: 70px;
+    height: 160px;
+    display: none;
+    background-image: url('../../assets/images/logo/Studio-Project-transparent-2.png');
+    cursor: pointer;
+
+    @media(max-width: 1024px){
+        display: block;
+    }
+}

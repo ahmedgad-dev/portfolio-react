@@ -26,7 +26,7 @@ function Projects() {
 
   
     return(
-       <section className="menu section">
+       <section className="menu section" id='projects'>
         <div className="title">
           <h2>My Projects</h2>
           <div className="underline"></div>
