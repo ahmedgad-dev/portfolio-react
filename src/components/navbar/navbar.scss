@@ -9,14 +9,14 @@
     .navbar-start{
         justify-content: flex-start;
         @media(max-width: 500px){
-            width: auto;
+            width: 50%;
         }
     }
 
     .navbar-end{
 
         @media(max-width: 500px){
-            width: auto;
+            width: 50%;
         }
     }
 
