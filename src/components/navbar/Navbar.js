@@ -9,8 +9,8 @@ import  Logo from '../../components/logo/Logo';
 const Navbar = () => {
   return (
   <Fragment>
-    <div className="navbar sticky top-0 z-30 flex h-16 w-full justify-center align-center bg-opacity-90 backdrop-blur transition-all duration-100 text-primary-content">  
-     <div className="navbar-start">
+    <div className="navigation sticky top-0 z-30 flex h-16 w-full justify-center align-center bg-opacity-90 backdrop-blur transition-all duration-100 text-primary-content">  
+     <div className="nav-start flex justify-end align-center items-center w-1/2">
       <div className="dropdown">
        <label tabIndex={0} className="btn btn-circle">
          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -23,12 +23,8 @@ const Navbar = () => {
       </div>
       <Logo className='logo-nav' nav/>
      </div>
-
-   <div className="navbar-center">
      
-   </div>
-     
-   <div className="navbar-end"> 
+   <div className="nav-end flex justify-end align-center items-center w-1/2"> 
     <Link to='/github' className='nav-link text-white mr-3 font-bold' ><GithubIcon className='icon'/></Link>
     <button className="btn "> <ChatIcon className='icon'/> </button>
    </div>
