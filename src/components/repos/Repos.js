@@ -41,7 +41,7 @@ const Repos = ({githubPage}) =>{
   }
 
   return(
-    <section className='repos flex flex-col justify-around align-center flex-wrap mt-36'>
+    <section className='repos flex flex-col justify-around align-center flex-wrap mt-36' id='repos'>
       <h1 className='repos-head flex flex-row bg-white align-center items-center ml-6 mt-6'>
          GitHub  <GithubIcon className='ml-2 icon-github'/>        
      </h1>

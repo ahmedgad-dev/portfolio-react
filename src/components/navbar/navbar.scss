@@ -1,7 +1,5 @@
 .navigation{
     width: 100%;
-   
-   
     color: white;
 
    /* @media(max-width: 500px){
@@ -16,7 +14,6 @@
     }
 
     .nav-end{
-
         @media(max-width: 500px){
             width: 50%;
         }
@@ -27,7 +24,12 @@
     }
 }
 
-
 .icon{
     fill: white;
+}
+
+.git-icon{
+    fill: #303640;
+    width: 36px;
+    height: 36px;
 }

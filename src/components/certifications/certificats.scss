@@ -1,0 +1,39 @@
+.certifications{
+   
+    .certificates{
+        padding: 2rem;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-right: 20px;
+            border:4px double gray;
+            border-radius: 20px;
+        }
+    }
+
+    .education{
+        display: flex;
+        flex-direction: column;
+        .name{
+           
+            font-weight: bold;
+        }
+        .info{
+            h3{
+                font-size: 22px;
+                font-weight: bold;
+                letter-spacing: 5px;
+                margin-bottom: 3rem;     
+            }
+        }
+        .education-icon{
+            font-size: 25px;
+            margin-right: 20px;
+
+           &__1{
+            font-size: 35px;
+           }
+        }
+    }
+}

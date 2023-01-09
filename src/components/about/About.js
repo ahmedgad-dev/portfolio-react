@@ -4,15 +4,16 @@ import image2 from '../../assets/images/istock-3.jpeg'
 import image1 from '../../assets/images/unsplash-1.jpg'
 import image3 from '../../assets/images/unsplash-2.jpg'
 import {GrTwitter,GrInstagram} from 'react-icons/gr'
-import {FaTiktok, FaFacebookF, FaTelegramPlane} from 'react-icons/fa'
+import {FaTiktok, FaFacebookF, FaTelegramPlane, FaGithub} from 'react-icons/fa'
 import {RiWhatsappFill} from 'react-icons/ri'
 
 const About = () => {
   return (
-    <section className="section-about mt-12">
+    <section className="section-about mt-12" id='about'>
       <div className="mb-4 md:mb-16 lg:mb-24">
           <h2 className="heading-secondary uppercase">
-              all types of projects    
+              any project    
+              <div className="underline"></div>
           </h2>
        </div>
 
@@ -30,12 +31,12 @@ const About = () => {
                </p>
                <h3 className="heading-tertiary u-margin-bottom-small">feel free to contact me on social media</h3>
                <div className="social flex flex-row  self-center">
-                  <RiWhatsappFill className='icon' title='WhatsApp'/>
-                  <FaFacebookF className='icon' title='Facebook'/>
-                  <GrInstagram className='icon' title='Instagram'/>
-                  <FaTiktok className='icon' title='TikTok'/>
-                  <GrTwitter className='icon' title='Twitter' />
-                  <FaTelegramPlane className='icon' title='Telegram'/>
+                <a href='https://wa.me/01009860198' target='_blank'> <RiWhatsappFill className='icon' title='WhatsApp'/></a>
+                <a href='https://m.facebook.com/100000715726616/' target='_blank'><FaFacebookF className='icon' title='Facebook'/></a>
+                <a href='https://www.instagram.com/ahmedgad220' target='_blank'><GrInstagram className='icon' title='Instagram'/></a>
+                <a href='https://github.com/ahmedGad-dev' target='_blank'><FaGithub className='icon' title='Github'/> </a>
+                <a href='https://www.instagram.com/ahmedgad220' target='_blank'><GrTwitter className='icon' title='Twitter' /></a>
+                <a href='https://t.me/ahmedGad_Dev' target='_blank'><FaTelegramPlane className='icon' title='Telegram'/></a>
                </div>
    
             </div>
