@@ -13,7 +13,7 @@ function HomePage() {
       <Header /> 
       <Projects />
       <Features />
-      <Repos />
+      <Repos hommePage/>
       <About/>
       <Certifications/>
     </div>

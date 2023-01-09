@@ -13,7 +13,7 @@ const Certifications = () => {
   return (
     <div className='certifications flex flex-col sm:flex-row justify-center align center flex-wrap mt-36'>
 
-         <div className="certificates w-full sm:w-1/2 flex justify-between mb-6 sm:mb-0">
+         <div className="certificates w-full sm:w-1/2 flex mb-6 sm:mb-0 flex-col sm:flex-row items-center align-center justify-center sm:justify-between">
             <img src={Aou} alt="Open university certificate" />
             <img src={Udacity} alt="Udacity proffessional track certificate" />
         </div>

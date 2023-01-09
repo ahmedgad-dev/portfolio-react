@@ -1,5 +1,4 @@
 .certifications{
-   
     .certificates{
         padding: 2rem;
         img{
@@ -9,6 +8,13 @@
             margin-right: 20px;
             border:4px double gray;
             border-radius: 20px;
+
+            @media(max-width: 641px){
+                width: 70%;
+                height: 70%;
+                margin-right: 0px;
+                margin-bottom: 25px;
+            }
         }
     }
 
