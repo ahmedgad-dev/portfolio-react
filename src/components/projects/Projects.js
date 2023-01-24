@@ -27,8 +27,8 @@ function Projects() {
   
     return(
        <section className="menu section" id='projects'>
-        <div className="title">
-          <h2>My Projects</h2>
+        <div className='mb-10 lg:mb-16'>
+          <h2 className='heading-secondary uppercase'>My Projects</h2>
           <div className="underline"></div>
         </div>
         <ProjectCategories categories={categories} filterItems={filterItems} />

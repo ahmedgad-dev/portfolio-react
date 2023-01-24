@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <section className="section-features from-primary to-secondary bg-gradient-to-br">
         <div>
-          <h1 className='services text-center text-3xl sm:text-5xl lg:text-7xl mb-2'>Services</h1>  
+          <h1 className='services uppercase text-center text-2xl sm:text-5xl lg:text-7xl mb-2'>Services</h1>  
           <div className="underline services"></div> 
         </div>  
                 
