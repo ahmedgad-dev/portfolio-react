@@ -17,7 +17,7 @@ const Features = () => {
           <div className="underline services"></div> 
         </div>  
                 
-      <div className="row-self-defined">
+      <div className="row-self-defined row-self-defined__updated">
         <div className="col-1-of-4">
             <div className="feature-box flex flex-col jutsify-center align-center">
                 <div className='flex self-center align-center items-center justify-center gap-3'>
