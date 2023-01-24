@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 
-html{
-  overflow-x:hidden
-}
+
 
 
 body {
@@ -13,6 +11,10 @@ body {
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+main{
+  overflow-x: hidden;
+}
 

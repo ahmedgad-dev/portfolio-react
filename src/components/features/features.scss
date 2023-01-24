@@ -1,5 +1,6 @@
 @import '../../sass/mixins.scss';
 @import '../../sass/variables.scss';
+@import '../../sass//animations.scss';
 
 .section-features{
     padding: 20rem 0; //200px
@@ -15,6 +16,23 @@
 
     @include respond(tab-port){
         padding: 10rem 0;
+    }
+
+    .services{
+        -webkit-animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        color: white;
+        letter-spacing: 3px;
+        transform: skewY(7deg);
+        position: relative;
+        top: -8rem;
+        font-weight: bold;
+
+        @media(max-width:600px){
+            top: -4rem;
+        }
     }
 }
 
