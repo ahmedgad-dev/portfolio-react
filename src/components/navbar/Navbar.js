@@ -27,7 +27,7 @@ const Navbar = () => {
      
    <div className="nav-end flex justify-end align-center items-center w-1/2 mr-3"> 
     <Link to='/github' className='nav-link text-white mr-3 font-bold' ><VscGithub className='git-icon'/></Link>
-    <a href='https://wa.me/01009860198' target='_blank'><button className="btn btn-secondary"> <ChatIcon className='icon'/> </button></a> 
+    <a href='https://wa.me/+201009860198' target='_blank'><button className="btn btn-secondary"> <ChatIcon className='icon'/> </button></a> 
    </div>
   </div>
  <Outlet/>
