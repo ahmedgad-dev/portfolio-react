@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <section className="section-features from-primary to-secondary bg-gradient-to-br">
         <div>
-          <h1 className='services uppercase text-center text-2xl sm:text-5xl lg:text-7xl mb-2'>Services</h1>  
+          <h1 className='services uppercase text-center text-2xl sm:text-5xl lg:text-7xl mb-2'>Skills</h1>  
           <div className="underline services"></div> 
         </div>  
                 
@@ -25,8 +25,15 @@ const Features = () => {
                 </div>
                 <h3 className="heading-tertiary u-margin-bottom-small m-2">React JS</h3>
                 <p className="feature-box__text">
-                    React and ES6 JS a modern and functioning way to make dynamic web apps in 2023. It works by re-rendering 
-                    only the changed components which produce high UI/UX.
+                    <ul>
+                     <li>React Hooks</li>
+                     <li>React Router V6</li>
+                     <li>Context API</li>
+                     <li>Redux</li>
+                     <li>API calls</li>
+                     <li>Performance </li>
+                     <li>Jest</li>
+                   </ul>
                 </p>
             </div>
         </div>
@@ -36,21 +43,34 @@ const Features = () => {
                 <div className='flex self-center align-center items-center justify-center gap-3'>
                     <HtmlIcon className='feature-box__icon' /> <CssIcon className='feature-box__icon'/>
                 </div>
-                <h3 className="heading-tertiary u-margin-bottom-small m-2">Convert To HTML</h3>
+                <h3 className="heading-tertiary u-margin-bottom-small m-2">  HTML|CSS</h3>
                 <p className="feature-box__text">
-                   Converting any custom design, figma, PDF or other design you choose can be also another page from the internet into a static HTML5 
-                   and CSS3/SASS web page.
+                  <ul>
+                    <li>HTML 5</li>
+                    <li>CSS3</li>
+                    <li>SASS</li>
+                    <li>Tailwind</li>
+                    <li>BootStrap</li>
+                    <li>CSS Animations</li> 
+                    <li>Media Queries</li>          
+                  </ul>
                 </p>
             </div>
         </div>
 
         <div className="col-1-of-4">
             <div className="feature-box flex flex-col jutsify-center align-center">
-                <WordpressIcon className='flex self-center feature-box__icon'/>
-                <h3 className="heading-tertiary u-margin-bottom-small m-2">Wordpress</h3>
+                <JsIcon className='flex self-center feature-box__icon'/>
+                <h3 className="heading-tertiary u-margin-bottom-small m-2">JavaScript</h3>
                 <p className="feature-box__text">
-                    My favourite website builder because it offers a huge number of plugins and themes that can be suitable for 
-                    any business criteria, it is also used to build many websites on the web
+                   <ul>
+                    <li>ES6 JS</li>
+                    <li>TypeScript</li>
+                    <li>Functional paradigm</li>
+                    <li>MVC programming</li>                    
+                    <li>Data Types</li>
+                    <li>Space & time complexity</li>
+                   </ul>
                 </p>
             </div>
         </div>
@@ -58,12 +78,19 @@ const Features = () => {
         <div className="col-1-of-4">
             <div className="feature-box flex flex-col jutsify-center align-center">
                 <div className='flex self-center align-center items-center justify-center gap-3'>
-                    <NodeIcon className='feature-box__icon' /> <FirebaseIcon className='feature-box__icon'/>
+                    <NodeIcon className='feature-box__icon' />
                 </div>
-                <h3 className="heading-tertiary u-margin-bottom-small m-2">Back End</h3>
+                <h3 className="heading-tertiary u-margin-bottom-small m-2">Node JS</h3>
                  <p className="feature-box__text">
-                    I also work on the backend with Node JS, Express JS and firebase, it was usually to provide a simple database
-                    to hold my API's JSON data, users information and authentication .
+                   <ul>
+                    <li>Express JS</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSql</li>
+                    <li>Redis</li>
+                    <li>Authentication</li>
+                    <li>Data Encryption</li>   
+                    <li>Docker</li>               
+                   </ul>
                 </p>
             </div>
         </div>

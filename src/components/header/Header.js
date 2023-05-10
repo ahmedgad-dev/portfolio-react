@@ -21,6 +21,7 @@ import { ReactComponent as WordpressIcon } from '../../assets/svg/wordpress.svg'
 import { ReactComponent as VisualstudioIcon } from '../../assets/svg/visualstudiocode.svg'
 import { ReactComponent as BootstrapIcon } from '../../assets/svg/bootstrap.svg'
 import Logo from '../logo/Logo'
+import CV from '../cv/CV'
 
 function Header() {
   return (
@@ -89,7 +90,7 @@ function Header() {
             </div>       
          </div>
       </div> 
-
+    
      <div className="card-container w-1/2 flex justify-end slef-end">  
       <div className="card w-96 glass shadow-xl">
       <div><figure><img src= {personalImage} alt="card!" className='card-image mt-4'/></figure></div> 
