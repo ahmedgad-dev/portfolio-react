@@ -20,8 +20,40 @@ import { ReactComponent as TailwindIcon } from '../../assets/svg/tailwindcss.svg
 import { ReactComponent as WordpressIcon } from '../../assets/svg/wordpress.svg'
 import { ReactComponent as VisualstudioIcon } from '../../assets/svg/visualstudiocode.svg'
 import { ReactComponent as BootstrapIcon } from '../../assets/svg/bootstrap.svg'
+import { ReactComponent as Gears } from '../../assets/svg/gears.svg'
+import { ReactComponent as Refresh } from '../../assets/svg/refresh.svg'
+import { ReactComponent as Mobile } from '../../assets/svg/mobile.svg'
+import { ReactComponent as Circle } from '../../assets/svg/circle.svg'
+import { ReactComponent as Global } from '../../assets/svg/global.svg'
 import Logo from '../logo/Logo'
-import CV from '../cv/CV'
+import {motion} from 'framer-motion'
+
+
+ const svgOpacity = {
+  hidden:{
+      opacity: 0
+  },
+  visible: {
+      opacity:1,
+      transition: {
+          duration: 1
+      }
+    }
+  }
+
+  const pathVariants = {
+    hidden:{opacity: 0,
+    pathLength: 0},
+    visible: 
+    {opacity: 1,
+    pathLength: 1
+    },
+    transition:{
+        duration:2,
+        ease: 'ease-in-out'
+    }
+}
+
 
 function Header() {
   return (
@@ -30,39 +62,43 @@ function Header() {
     <div className="header h-full xl:h-screen lg:w-screen p-6 relative flex justify-between from-primary to-secondary text-primary-content -mt-[4rem] grid 
        place-items-center items-end bg-gradient-to-br pt-20 bg-contain"> 
 
-      <div className="details flex flex-col w-1/2 h-full align-center"> 
+      <div className="details flex flex-col w-1/2 md:w-1/4 h-full align-center mt-3 "> 
          <div className="site-logo site-logo__2 flex self-start mb-2">
             <Logo/>
          </div>
 
-         <div className="info h-auto flex rounded-lg shadow-md w- sm:w-2/3">
-          <div className="flex flex-row justify-center align-center">
-            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="80" max="100"/> <span className='leading-2 mt-1'>JavaScript</span>
-          </div>
-          
-          <div className="flex flex-row justify-center align-center">
-            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>React JS</span>
-          </div>
+         <div className="info h-auto rounded-lg shadow-md p-8">
+            <ul className='header-list'>
+              <motion.li className='flex flex-row w-full align-center items-center'
+               initial={{opacity:0, x: '-100vw'}}
+               animate={{opacity: 1, x:0}}
+               transition={{delay:0.4 , type: 'spring', stiffness: 80}}>
+               <Circle className='circle-icon mr-3'/>DEVELOPE<Mobile className='head-icon ml-3'/>  
+              </motion.li>
 
-          <div className="flex flex-row justify-center align-center">
-            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>CSS/SASS</span>
-          </div>
+              <motion.li 
+               className='flex flex-row w-full align-center items-center'
+               initial={{opacity:0, x: '-100vw'}}
+               animate={{opacity: 1, x:0}}
+               transition={{delay:0.8, type: 'spring', stiffness: 80}}>
+               <Circle className='circle-icon mr-3'/>TEST<Gears className='head-icon ml-3' />
+              </motion.li>
 
-          <div className="flex flex-row justify-center align-center">
-            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="93" max="100"/> <span className='leading-2 mt-1'>HTML/JSX</span>
-          </div>
+              <motion.li className='flex flex-row w-full align-center items-center'
+                initial={{opacity:0, x: '-100vw'}}
+                animate={{opacity: 1.6, x:0}}
+                transition={{delay:1.2,  type: 'spring', stiffness: 80}}>
+               <Circle className='circle-icon mr-3'/>DEPLOY<Global className='head-icon ml-3' />
+              </motion.li>
 
-          <div className="flex flex-row justify-center align-center">
-            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="85" max="100"/> <span className='leading-2 mt-1'>Tailwind</span>
-          </div>
-
-          <div className="flex flex-row justify-center align-center">
-            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="65" max="100"/> <span className='leading-2 mt-1'>Redux</span>
-          </div>
-
-          <div className="flex flex-row justify-center align-center">
-            <progress className="progress-bar progress progress-secondary w-72 sm:w-96 h-4 m-2" value="30" max="100"/> <span className='leading-2 mt-1'>Node JS</span>
-          </div>
+              <motion.li className='flex flex-row w-full align-center items-center'
+                initial={{opacity:0, x: '-100vw'}}
+                animate={{opacity: 1, x:0}}
+                transition={{delay:1.6, type: 'spring', stiffness: 80}}>
+               <Circle className='circle-icon mr-3'/>LOOP<Refresh className='head-icon ml-3' /> 
+              </motion.li>
+              <motion.hr initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2.5, type:'tween', duration: 1.5}} />
+            </ul>
          </div>
 
          <div className="brands rounded-lg flex flex-col justify-center align-center items-center self-end">
@@ -91,7 +127,7 @@ function Header() {
          </div>
       </div> 
     
-     <div className="card-container w-1/2 flex justify-end slef-end">  
+     <div className="card-container w-1/2 flex justify-end">  
       <div className="card w-96 glass shadow-xl">
       <div><figure><img src= {personalImage} alt="card!" className='card-image mt-4'/></figure></div> 
         <div className="card-body text-white">
